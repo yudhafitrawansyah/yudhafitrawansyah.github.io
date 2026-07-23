@@ -1,1 +1,163 @@
-/* Main stylesheet */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#08111f;
+    color:white;
+    overflow-x:hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(8,17,31,.95);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#36b8ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#36b8ff;
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-content{
+
+display:grid;
+
+grid-template-columns:1fr 420px;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.hero h3{
+
+color:#36b8ff;
+
+font-size:24px;
+
+margin-bottom:10px;
+
+}
+
+.hero h1{
+
+font-size:68px;
+
+margin-bottom:20px;
+
+}
+
+.hero h2{
+
+font-size:34px;
+
+color:#36b8ff;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#d4d4d4;
+
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 36px;
+
+background:#36b8ff;
+
+border-radius:40px;
+
+color:#08111f;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+.hero-image{
+
+text-align:center;
+
+}
+
+.hero-image img{
+
+width:360px;
+
+height:360px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid #36b8ff;
+
+box-shadow:0 0 40px rgba(54,184,255,.4);
+
+}
