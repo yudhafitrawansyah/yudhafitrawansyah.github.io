@@ -77,9 +77,11 @@ margin-bottom:10px;
 }
 
 .hero h1{
-font-size:64px;
-font-weight:800;
-margin-bottom:15px;
+
+font-size:56px;
+
+line-height:1.2;
+
 }
 
 .hero h2{
