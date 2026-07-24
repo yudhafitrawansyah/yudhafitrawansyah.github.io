@@ -45,6 +45,8 @@ padding:25px 0;
 font-size:30px;
 font-weight:700;
 color:#35b8ff;
+transition:.3s;
+cursor:pointer;
 }
 
 nav ul{
