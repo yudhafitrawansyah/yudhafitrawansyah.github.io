@@ -657,3 +657,51 @@ header.sticky{
     transform:translateY(0);
 
 }
+
+/* ============================
+   BACK TO TOP
+============================ */
+
+#backToTop{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#35b8ff;
+
+    color:#08111f;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+    transition:all .35s ease;
+
+    box-shadow:0 8px 20px rgba(53,184,255,.35);
+
+}
+
+#backToTop:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(53,184,255,.45);
+
+}
