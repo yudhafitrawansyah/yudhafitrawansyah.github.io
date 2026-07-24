@@ -110,8 +110,13 @@ font-weight:700;
 transition:.3s;
 }
 
+.btn{
+    transition:0.3s ease;
+}
+    
 .btn:hover{
-transform:translateY(-5px);
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(53,184,255,.35);
 }
 
 .btn-outline{
