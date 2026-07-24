@@ -142,6 +142,12 @@ window.addEventListener("load", () => {
 
         loader.classList.add("hide");
 
+        setTimeout(() => {
+
+            loader.style.display = "none";
+
+        },800);
+
     },1000);
 
 });
