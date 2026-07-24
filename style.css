@@ -385,7 +385,7 @@ color:#d7d7d7;
 
 .project-card:hover{
     transform:translateY(-10px);
-    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    box-shadow:0 15px 35px rgba(0,170,255,.25);
 }
 
 .project-card img{
