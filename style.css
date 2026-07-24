@@ -77,12 +77,9 @@ margin-bottom:10px;
 }
 
 .hero h1{
-
-font-size:56px;
-
-line-height:1.2;
-
-}
+    font-size:56px;
+    line-height:1.15;
+    margin-bottom:15px;
 
 .hero h2{
 font-size:34px;
