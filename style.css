@@ -455,14 +455,15 @@ color:#d7d7d7;
 
     border:1px solid rgba(255,255,255,.08);
 
-    transition:.3s;
+    transition:.35s;
 
 }
 
-.contact-item:hover{
+.contact-card:hover{
 
     transform:translateY(-8px);
 
+    box-shadow:0 15px 35px rgba(53,184,255,.25);
 }
 
 .contact-item h3{
