@@ -206,3 +206,41 @@ function typeEffect() {
 }
 
 typeEffect();
+
+// ============================
+// Lightbox Gallery
+// ============================
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeLightbox = document.getElementById("closeLightbox");
+
+const projectImages = document.querySelectorAll(".project-image");
+
+projectImages.forEach((img) => {
+
+    img.addEventListener("click", () => {
+
+        lightbox.style.display = "flex";
+
+        lightboxImg.src = img.src;
+
+    });
+
+});
+
+closeLightbox.addEventListener("click", () => {
+
+    lightbox.style.display = "none";
+
+});
+
+lightbox.addEventListener("click", (e) => {
+
+    if(e.target === lightbox){
+
+        lightbox.style.display = "none";
+
+    }
+
+});
