@@ -596,3 +596,21 @@ header.sticky{
     transform:translateY(0);
 
 }
+
+.project-card{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.6s;
+
+}
+
+.project-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
