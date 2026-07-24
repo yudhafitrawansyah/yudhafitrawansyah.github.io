@@ -558,3 +558,19 @@ nav a.active{
     color:#35b8ff;
 
 }
+
+header{
+
+    transition:.3s;
+
+}
+
+header.sticky{
+
+    background:rgba(8,17,31,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
