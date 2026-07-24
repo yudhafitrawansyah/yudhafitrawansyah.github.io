@@ -151,3 +151,58 @@ window.addEventListener("load", () => {
     },1000);
 
 });
+
+// ============================
+// Typing Animation
+// ============================
+
+const typingElement = document.getElementById("typing");
+
+const texts = [
+    "Civil Engineer",
+    "QA/QC Engineer",
+    "Engineering Support",
+    "Drafter AutoCAD"
+];
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+
+    const currentText = texts[textIndex];
+
+    if (!isDeleting) {
+
+        typingElement.textContent = currentText.substring(0, charIndex++);
+
+        if (charIndex > currentText.length) {
+
+            isDeleting = true;
+
+            setTimeout(typeEffect, 1500);
+
+            return;
+
+        }
+
+    } else {
+
+        typingElement.textContent = currentText.substring(0, charIndex--);
+
+        if (charIndex < 0) {
+
+            isDeleting = false;
+
+            textIndex = (textIndex + 1) % texts.length;
+
+        }
+
+    }
+
+    setTimeout(typeEffect, isDeleting ? 40 : 90);
+
+}
+
+typeEffect();
