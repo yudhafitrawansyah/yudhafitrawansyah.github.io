@@ -64,10 +64,10 @@ align-items:center;
 }
 
 .hero-content{
-display:grid;
-grid-template-columns:1fr 420px;
-gap:60px;
-align-items:center;
+    display:grid;
+    grid-template-columns:55% 45%;
+    align-items:center;
+    gap:50px;
 }
 
 .hero h3{
@@ -126,16 +126,21 @@ color:#35b8ff;
 }
 
 .hero-image{
-text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .hero-image img{
-width:340px;
-height:340px;
-border-radius:50%;
-object-fit:cover;
-border:8px solid #35b8ff;
-box-shadow:0 0 35px rgba(53,184,255,.35);
+    width:350px;
+    aspect-ratio:1/1;
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #35b8ff;
+
+    box-shadow:0 0 30px rgba(53,184,255,.35);
 }
 
 .hero-info{
