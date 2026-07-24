@@ -802,3 +802,61 @@ header.sticky{
     pointer-events:none;
 
 }
+
+/* ============================
+   LIGHTBOX
+============================ */
+
+#lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.9);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+}
+
+#lightbox img{
+
+    max-width:90%;
+
+    max-height:85%;
+
+    border-radius:12px;
+
+    box-shadow:0 0 40px rgba(53,184,255,.35);
+
+}
+
+#closeLightbox{
+
+    position:absolute;
+
+    top:25px;
+
+    right:40px;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#closeLightbox:hover{
+
+    color:#35b8ff;
+
+}
