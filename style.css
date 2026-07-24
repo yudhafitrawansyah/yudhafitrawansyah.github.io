@@ -104,6 +104,36 @@ margin-bottom:10px;
     margin-bottom:25px;
 }
 
+job-title{
+
+    min-height:45px;
+
+}
+
+#typing{
+
+    color:#35b8ff;
+
+}
+
+#typing::after{
+
+    content:"|";
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
 .hero p{
 font-size:18px;
 line-height:1.8;
