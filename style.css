@@ -705,3 +705,59 @@ header.sticky{
     box-shadow:0 15px 35px rgba(53,184,255,.45);
 
 }
+
+/* ============================
+   LOADER
+============================ */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#08111f;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .8s ease;
+
+}
+
+#loader h1{
+
+    color:#35b8ff;
+
+    font-size:60px;
+
+    margin:0;
+
+}
+
+#loader p{
+
+    color:white;
+
+    letter-spacing:3px;
+
+    margin-top:15px;
+
+    font-size:18px;
+
+}
+
+#loader.hide{
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
