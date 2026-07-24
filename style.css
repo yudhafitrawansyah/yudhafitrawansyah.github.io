@@ -49,6 +49,14 @@ transition:.3s;
 cursor:pointer;
 }
 
+.logo:hover{
+
+    transform:scale(1.08);
+
+    text-shadow:0 0 20px #35b8ff;
+
+}
+
 nav ul{
 display:flex;
 list-style:none;
