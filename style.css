@@ -401,3 +401,58 @@ color:#d7d7d7;
     color:#d8d8d8;
     line-height:1.8;
 }
+
+.contact{
+
+    padding:120px 0;
+
+}
+
+.contact-content{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.contact-item{
+
+    background:#111d31;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.contact-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-item h3{
+
+    color:#35b8ff;
+
+    margin-bottom:15px;
+
+}
+
+.contact-item p,
+.contact-item a{
+
+    color:#d7d7d7;
+
+    text-decoration:none;
+
+}
