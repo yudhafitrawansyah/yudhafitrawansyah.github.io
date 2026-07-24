@@ -97,3 +97,35 @@ const cardObserver = new IntersectionObserver((entries)=>{
 });
 
 cards.forEach(card=>cardObserver.observe(card));
+
+// ============================
+// Back To Top Button
+// ============================
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 500){
+
+        backToTop.style.display = "block";
+
+    }else{
+
+        backToTop.style.display = "none";
+
+    }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+});
