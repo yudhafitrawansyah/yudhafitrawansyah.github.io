@@ -574,3 +574,25 @@ header.sticky{
     box-shadow:0 5px 20px rgba(0,0,0,.3);
 
 }
+
+/* ============================
+   SCROLL ANIMATION
+============================ */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:all .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
