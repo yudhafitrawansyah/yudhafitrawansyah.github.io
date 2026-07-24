@@ -208,38 +208,104 @@ function typeEffect() {
 typeEffect();
 
 // ============================
-// Lightbox Gallery
+// Premium Lightbox Gallery
 // ============================
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 const closeLightbox = document.getElementById("closeLightbox");
+const prevImage = document.getElementById("prevImage");
+const nextImage = document.getElementById("nextImage");
 
 const projectImages = document.querySelectorAll(".project-image");
 
-projectImages.forEach((img) => {
+let currentImage = 0;
 
-    img.addEventListener("click", () => {
+function showImage(index){
 
-        lightbox.style.display = "flex";
+    lightbox.style.display = "flex";
 
-        lightboxImg.src = img.src;
+    lightboxImg.src = projectImages[index].src;
+
+}
+
+projectImages.forEach((img,index)=>{
+
+    img.addEventListener("click",()=>{
+
+        currentImage = index;
+
+        showImage(currentImage);
 
     });
 
 });
 
-closeLightbox.addEventListener("click", () => {
+nextImage.addEventListener("click",()=>{
 
-    lightbox.style.display = "none";
+    currentImage++;
+
+    if(currentImage >= projectImages.length){
+
+        currentImage = 0;
+
+    }
+
+    showImage(currentImage);
 
 });
 
-lightbox.addEventListener("click", (e) => {
+prevImage.addEventListener("click",()=>{
 
-    if(e.target === lightbox){
+    currentImage--;
 
-        lightbox.style.display = "none";
+    if(currentImage < 0){
+
+        currentImage = projectImages.length-1;
+
+    }
+
+    showImage(currentImage);
+
+});
+
+closeLightbox.addEventListener("click",()=>{
+
+    lightbox.style.display="none";
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+    if(e.target===lightbox){
+
+        lightbox.style.display="none";
+
+    }
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(lightbox.style.display==="flex"){
+
+        if(e.key==="Escape"){
+
+            lightbox.style.display="none";
+
+        }
+
+        if(e.key==="ArrowRight"){
+
+            nextImage.click();
+
+        }
+
+        if(e.key==="ArrowLeft"){
+
+            prevImage.click();
+
+        }
 
     }
 
