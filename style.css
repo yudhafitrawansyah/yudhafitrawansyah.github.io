@@ -951,3 +951,21 @@ header.sticky{
     margin-bottom:20px;
 
 }
+
+#gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+#gallery img{
+    width:100%;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#gallery img:hover{
+    transform:scale(1.03);
+}
