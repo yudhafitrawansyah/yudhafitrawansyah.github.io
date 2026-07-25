@@ -904,3 +904,50 @@ header.sticky{
     transform:translateY(-50%) scale(1.15);
 
 }
+
+/* ============================
+   PROJECT DETAIL
+============================ */
+
+.project-detail{
+
+    padding:140px 0 80px;
+
+}
+
+.detail-image{
+
+    width:100%;
+
+    max-width:900px;
+
+    display:block;
+
+    margin:40px auto;
+
+    border-radius:20px;
+
+}
+
+.project-info,
+.project-description,
+.project-responsibility,
+.project-gallery{
+
+    background:#111d31;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    margin-top:30px;
+
+}
+
+.project-detail h2{
+
+    color:#35b8ff;
+
+    margin-bottom:20px;
+
+}
