@@ -1,4 +1,22 @@
-const project = projects[0];
+// Membaca parameter URL
+const params = new URLSearchParams(window.location.search);
+
+// Ambil nilai id
+const projectId = Number(params.get("id"));
+
+const project = projects.find(item => item.id === projectId);
+
+if (!project) {
+
+    document.body.innerHTML = `
+        <h1 style="text-align:center;margin-top:100px;">
+            Project Not Found
+        </h1>
+    `;
+
+    throw new Error("Project not found");
+
+}
 
 document.getElementById("project-title").textContent = project.title;
 
