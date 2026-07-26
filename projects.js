@@ -57,7 +57,7 @@ const projects = [
         gallery: [
             "assets/project3.jpg"
         ]
-    }
+    },
 
  {
         id: 4,
