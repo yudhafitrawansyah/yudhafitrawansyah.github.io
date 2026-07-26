@@ -4,6 +4,7 @@ const params = new URLSearchParams(window.location.search);
 // Ambil nilai id
 const projectId = Number(params.get("id"));
 
+// Cari project berdasarkan id
 const project = projects.find(item => item.id === projectId);
 
 if (!project) {
