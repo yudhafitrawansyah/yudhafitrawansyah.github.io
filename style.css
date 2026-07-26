@@ -425,11 +425,12 @@ color:#d7d7d7;
 }
 
 .project-card{
-    background:#111d31;
+    background:#14213d;
     border-radius:20px;
     overflow:hidden;
-    transition:.35s;
-    border:1px solid rgba(255,255,255,.08);
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
 
 .project-card:hover{
@@ -445,6 +446,9 @@ color:#d7d7d7;
 
 .project-info{
     padding:25px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
 }
 
 .project-info h3{
@@ -455,6 +459,10 @@ color:#d7d7d7;
 .project-info p{
     color:#d8d8d8;
     line-height:1.8;
+}
+
+.project-info p{
+    flex-grow:1;
 }
 
 .contact{
@@ -981,6 +989,7 @@ header.sticky{
     flex-grow:1;
 }
 
-.project-card .btn{
-    margin-top:auto;
+project-card .btn{
+    align-self:flex-start;
+    margin-top:20px;
 }
