@@ -465,6 +465,13 @@ color:#d7d7d7;
     flex-grow:1;
 }
 
+.project-info p{
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
 .contact{
 
     padding:120px 0;
