@@ -971,3 +971,16 @@ header.sticky{
     margin-bottom:35px;
     font-size:2.8rem;
 }
+
+.project-card{
+    display:flex;
+    flex-direction:column;
+}
+
+.project-card p{
+    flex-grow:1;
+}
+
+.project-card .btn{
+    margin-top:auto;
+}
