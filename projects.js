@@ -141,7 +141,7 @@ const projects = [
             "Verify mechanical equipment installation",
             "Review engineering drawings",
             "Monitor construction progress",
-            "Prepare inspection reports"
+            "Prepare inspection reports",
             "Verify MAR",
             "Coordinate with QA/QC"
         ],
