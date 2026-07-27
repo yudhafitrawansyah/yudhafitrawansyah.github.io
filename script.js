@@ -161,7 +161,7 @@ const typingElement = document.getElementById("typing");
 const texts = [
     "Civil Engineer",
     "QA/QC Engineer",
-    "Engineering Support",
+    "EPC Support",
     "Drafter AutoCAD"
 ];
 
